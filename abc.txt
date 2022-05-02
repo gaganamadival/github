@@ -4,7 +4,7 @@
 
 int main() {
     std::cout << "Hello World!";
-    cin >>number;
+    cin >>number
     cin >>number;
     cin >>number;
     return 0;
