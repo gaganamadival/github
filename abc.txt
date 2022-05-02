@@ -7,6 +7,8 @@ int main() {
     cin >> number;
     cin >> number;
     cin >>number;
-    cin >> number;
+    cin >>number;
+    cin >>number;
+    return 0;
     return 0;
 }
