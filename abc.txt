@@ -1,11 +1,12 @@
-// Your First C++ Program
+name: 'Delete old artifacts'
+on:
+  workflow_dispatch:
 
-#include <iostream>
-
-int main() {
-    std::cout << "Hello World!";
-    cin >>number
-    cin >>number;
-    cin >>number;
-    return 0;
-}
+jobs:
+  delete-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kolpav/purge-artifacts-action@v1
+        with:
+          token: ${{ secrets. access_token }}
+          expire-in: 2days # Setting this to 0 will delete all artifacts
